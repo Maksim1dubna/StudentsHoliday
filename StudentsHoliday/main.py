@@ -9,7 +9,7 @@ def write_holiday_cities(first_letter):
         list_No_One = []
         for row in reader_obj:
             letter = row[0]
-            if letter[0] == first_letter:
+            if letter.startswith(first_letter) == True:
                 main_row = ' '.join(row)
                 list_main.append(main_row.split(','))
         for i in range(len(list_main)):
